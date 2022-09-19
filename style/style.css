@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium:wgh@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", cursive;
+}
+
+body {
+  text-align: center;
+  background-color: #0B76E3;
+  min-height: 100vh;
+  
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+
+} 
+
+.pokemon-img {
+  height: 48px;
+}
+
+.nav{
+  display: flex;
+  gap: 32px; 
+}
+
+.pokemon-nav {
+  font-family: 'Sarala', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+  
+}
+
+.guia {
+  border-top: 0.4px solid white
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 800px;
+  
+}
+
+.pokemon__image {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  bottom: 50%;
+  left: 27%;
+  transform: translate(-63%, 20%);
+  
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #fff;
+  top: 54.2%;
+  right: 68%;
+  font-size: clamp(8px, 2vw, 16px);
+}
+
+.pokemon__infos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #000;
+  top: 32.5%;
+  right: 15%;
+  font-size: clamp(10px, 2vw, 20px);
+  align-items: center;
+}
+
+.pokemon__name {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 73%;
+  left: 42.5%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__search {
+  width: 50%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #000;
+  font-weight: 600;
+  color: #000;
+  font-size: clamp(10px, 2vw, 20px);
+  background: #9d9d9d;
+  border: 3px solid #000;
+  box-shadow: inset -4.84629px -4.84629px 9.69259px rgba(255, 255, 255, 0.59),
+    inset 7.26944px 7.26944px 19.3852px rgba(95, 3, 18, 0.81);
+  border-radius: 7.26944px;
+}
